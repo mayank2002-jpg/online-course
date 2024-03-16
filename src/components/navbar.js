@@ -4,9 +4,9 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Home", href: "#", current: true },
-  { name: "Course", href: "#", current: false },
-  { name: "Testimonials", href: "#", current: false },
-  { name: "Mentor", href: "#", current: false },
+  { name: "Course", href: "#course", current: false },
+  { name: "Testimonials", href: "#testimonials", current: false },
+  { name: "Mentor", href: "#mentor", current: false },
 ];
 
 function classNames(...classes) {
@@ -18,7 +18,7 @@ export default function Example() {
     <>
       <div className="bg-indigo-900 text-center py-4 lg:px-4">
         <div
-          className="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex"
+          className=" animate-bounce p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex"
           role="alert"
         >
           <span className="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">
@@ -43,7 +43,7 @@ export default function Example() {
               <div className="relative flex h-16 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
-                  <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-white hover:text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="absolute -inset-0.5" />
                     <span className="sr-only">Open main menu</span>
                     {open ? (
@@ -62,10 +62,10 @@ export default function Example() {
 
                   <div className="hidden sm:ml-6 sm:flex flex-row-reverse ">
                     <div className="flex space-x-2 lg:ml-96">
-                      <button className="bg-white p-2 w-28 rounded-md text-sm uppercase font-semibold hover:bg-gray-300">
+                      <button className="bg-white p-2 w-28 rounded-md text-sm uppercase font-semibold hover:bg-gray-100">
                         login
                       </button>
-                      <button className="bg-white p-2 w-28 rounded-md text-sm uppercase font-semibold hover:bg-gray-300">
+                      <button className="bg-white p-2 w-28 rounded-md text-sm uppercase font-semibold hover:bg-gray-100">
                         SignUp
                       </button>
                     </div>
@@ -110,10 +110,10 @@ export default function Example() {
                   </Disclosure.Button>
                 ))}
                 <div className="flex space-x-2">
-                  <button className="bg-white p-2 w-28 rounded-md text-sm uppercase font-semibold hover:bg-gray-300">
+                  <button className="bg-white p-2 w-28 rounded-md text-sm uppercase font-semibold hover:bg-gray-100">
                     login
                   </button>
-                  <button className="bg-white p-2 w-28 rounded-md text-sm uppercase font-semibold hover:bg-gray-300">
+                  <button className="bg-white p-2 w-28 rounded-md text-sm uppercase font-semibold hover:bg-gray-100">
                     SignUp
                   </button>
                 </div>
